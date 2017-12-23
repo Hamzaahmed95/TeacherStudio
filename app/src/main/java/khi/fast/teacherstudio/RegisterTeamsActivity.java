@@ -57,11 +57,11 @@ public class RegisterTeamsActivity extends AppCompatActivity {
         setContentView(R.layout.register_teams);
 
         mmessageListViewMOM = (ListView) findViewById(R.id.messageListViewMOM);
-        mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        textHide=(TextView)findViewById(R.id.textHide);
-        mMessageDatabaseReference =mFirebaseDatabase.getReference().child("registerTeams");
-        closeButton = (ImageView) findViewById(R.id.backButtonMOM);
+            mFirebaseDatabase = FirebaseDatabase.getInstance();
+            mFirebaseAuth = FirebaseAuth.getInstance();
+            textHide=(TextView)findViewById(R.id.textHide);
+            mMessageDatabaseReference =mFirebaseDatabase.getReference().child("registerTeams");
+            closeButton = (ImageView) findViewById(R.id.backButtonMOM);
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
