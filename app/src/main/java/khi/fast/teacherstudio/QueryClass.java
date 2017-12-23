@@ -9,15 +9,25 @@ public class QueryClass {
     private String Question;
     private String TeacherName;
     private String Answer;
+    private String Status;
 
-    public QueryClass(String studentName, String question, String teacherName, String answer) {
+    public QueryClass(String studentName, String question, String teacherName, String answer,String status) {
         StudentName = studentName;
         Question = question;
         TeacherName = teacherName;
         Answer = answer;
+        Status=status;
     }
 
     public QueryClass() {
+    }
+
+    public String getStatus() {
+        return Status;
+    }
+
+    public void setStatus(String status) {
+        Status = status;
     }
 
     public String getStudentName() {

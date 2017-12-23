@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import java.util.List;
 
@@ -44,12 +45,17 @@ public class QueriesAdapter extends ArrayAdapter<QueryClass> {
         TextView Questions=(TextView)convertView.findViewById(R.id.questions);
         TextView Answer=(TextView)convertView.findViewById(R.id.answers);
 
+        LinearLayout linearLayout=(LinearLayout)convertView.findViewById(R.id.hide);
 
         QueryClass message = getItem(position);
         Questions.setText(message.getQuestion());
         Answer.setText(message.getAnswer());
         StudentName.setText("Anousha");
         TeacherName.setText("Hamza");
+        if(message.getStatus().equals("0")){
+            linearLayout.setVisibility(View.GONE);
+        }
+        else linearLayout.setVisibility(View.VISIBLE);
 
 
 

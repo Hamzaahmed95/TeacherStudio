@@ -44,17 +44,33 @@
                 android:layout_height="wrap_content"
                 android:text="TeacherName"
                 android:gravity="center"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:padding="10dp"
-            android:id="@+id/answers"
-            android:layout_height="wrap_content"
-            android:text="Google Firebase is the one stop shop for app development. This publication gives developers tips, tricks and guides to everything that’s possible with Firebase"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/answers"
+                android:layout_height="wrap_content"
+                android:text="Google Firebase is the one stop shop for app development. This publication gives developers tips, tricks and guides to everything that’s possible with Firebase"/>
         </LinearLayout>
 
 
-
-
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/editAns"
+            android:background="@drawable/shape"
+            android:hint="Enter Answer!"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/AskQuestion"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#23355b"
+            android:background="@drawable/shape2"
+            android:text="Answer it"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -1,6 +1,7 @@
 package khi.fast.teacherstudio;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -10,6 +11,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,7 +36,7 @@ import java.util.List;
 public class PostQueriesActivity  extends AppCompatActivity {
 
 
-    Button AskQuestion;
+    ImageButton AskQuestion;
     Dialog dialog;
     private DatabaseReference mMessageDatabaseReference;
 
@@ -41,6 +44,7 @@ public class PostQueriesActivity  extends AppCompatActivity {
     private FirebaseDatabase mFirebaseDatabase;
     private ChildEventListener mChildEventListener;
 
+    private ImageView closeButton;
     private ListView mmessageListViewMOM;
     private FirebaseAuth mFirebaseAuth;
 
@@ -53,9 +57,18 @@ public class PostQueriesActivity  extends AppCompatActivity {
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mFirebaseAuth = FirebaseAuth.getInstance();
         mMessageDatabaseReference =mFirebaseDatabase.getReference().child("askQueries");
+        closeButton = (ImageView) findViewById(R.id.backButtonMOM);
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(PostQueriesActivity.this,StudentDashboard.class);
 
+                startActivity(i);
+                finish();
+            }
+        });
         mmessageListViewMOM = (ListView) findViewById(R.id.messageListViewMOM);
-        AskQuestion=(Button)findViewById(R.id.AskQuestion);
+        AskQuestion=(ImageButton) findViewById(R.id.AskQuestion);
         Toast.makeText(PostQueriesActivity.this,"PostQueries Opens! ",Toast.LENGTH_SHORT).show();
         AskQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -233,7 +246,7 @@ public class PostQueriesActivity  extends AppCompatActivity {
             public void onClick(View view) {
                 String name="Anousha ";
                 String Question=editQuery.getText().toString();
-                QueryClass queryClass=new QueryClass(name,Question,"TeacherName","");
+                QueryClass queryClass=new QueryClass(name,Question,"TeacherName","","0");
                 mMessageDatabaseReference.push().setValue(queryClass);
                 dialog.dismiss();
             }
