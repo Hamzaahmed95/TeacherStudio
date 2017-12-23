@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:layout_marginBottom="140dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:gravity="center|top"
+    android:background="@android:color/white"
+    android:id="@+id/rightLayoutMOM"
+    android:orientation="vertical">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:textColor="@android:color/black"
+    android:textSize="30dp"
+    android:layout_height="wrap_content"
+    android:text="Registeration"/>
+    <ImageButton
+        android:id="@+id/StatusImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/pending"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/Status2"
+        android:layout_height="wrap_content"
+        android:text="Pending"/>
+
+
+</LinearLayout>

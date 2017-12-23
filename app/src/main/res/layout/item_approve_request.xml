@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:text="Group Leader "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/RequestFrom"
+            android:text="(Hamza Ahmed)"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/approve"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/shape"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Approve"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/shape"
+            android:text="Delete"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:text="Register Your team"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:background="#3b5998"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:orientation="vertical">
+            <EditText
+                android:gravity="center"
+                android:id="@+id/leaderName"
+                android:background="@drawable/shape"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Group Leader Name"/>
+
+            <EditText
+                android:gravity="center"
+                android:id="@+id/member1"
+                android:background="@drawable/shape"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Member 1"/>
+
+            <EditText
+                android:gravity="center"
+                android:id="@+id/member2"
+                android:background="@drawable/shape"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Member 2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/l1"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/close1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#3b5998"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white"
+            android:text="Register"/>
+        <Button
+            android:id="@+id/close2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#3b5998"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+</RelativeLayout>
