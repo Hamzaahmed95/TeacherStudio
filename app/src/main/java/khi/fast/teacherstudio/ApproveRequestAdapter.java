@@ -61,8 +61,30 @@ public class ApproveRequestAdapter extends ArrayAdapter<RegisterTeamClass>{
         final RegisterTeamClass message=getItem(position);
         name.setText(message.getLeaderName());
 
+
         final Button Cancel=(Button)convertView.findViewById(R.id.delete);
-        Query mHouseDatabaseReference3 =mFirebaseDatabase.getReference().child("registerTeams");
+
+        if(message.getStatus().equals("1")){
+            Approve.setEnabled(false);
+            Approve.setBackgroundDrawable(getContext().getResources().getDrawable(R.color.green));
+            Approve.setText("Approved");
+            Cancel.setVisibility(View.GONE);
+
+        }
+        else if(message.getStatus().equals("-1")){
+            Approve.setEnabled(false);
+            Approve.setBackgroundDrawable(getContext().getResources().getDrawable(R.color.green));
+            Approve.setText("Cancelled");
+            Cancel.setVisibility(View.GONE);
+        }
+        else{
+            Cancel.setVisibility(View.VISIBLE);
+            Approve.setEnabled(true);
+            Approve.setText("Confirm");
+        }
+
+
+       /* Query mHouseDatabaseReference3 =mFirebaseDatabase.getReference().child("registerTeams");
 
         mHouseDatabaseReference3.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -107,7 +129,7 @@ public class ApproveRequestAdapter extends ArrayAdapter<RegisterTeamClass>{
 
             }
         });
-
+*/
         Approve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

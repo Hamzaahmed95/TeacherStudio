@@ -29,9 +29,10 @@ public class TeacherLoginActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(id.getText().toString().equals("Anousha Ashiq Ali") && pwd.getText().toString().equals("Anousha1997")){
+                if(id.getText().toString().equals("Teacher") && pwd.getText().toString().equals("teacher")){
                     Intent i = new Intent(TeacherLoginActivity.this,TeacherDashboard.class);
                     startActivity(i);
+                    i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 }
                 else {
                     Toast.makeText(TeacherLoginActivity.this,"Enter Correct ID or Password!",Toast.LENGTH_SHORT).show();
@@ -44,7 +45,7 @@ public class TeacherLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(TeacherLoginActivity.this,StudentLoginActivity.class);
                 startActivity(i);
-                finish();
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             }
         });
 

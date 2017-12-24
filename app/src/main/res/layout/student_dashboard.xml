@@ -56,7 +56,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape3"
+            android:background="#986d8e"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="70dp"
@@ -69,17 +70,21 @@
             android:gravity="center"
             android:id="@+id/viewAnnoucements"
             android:layout_marginTop="15dp"
-            android:textSize="20dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"
             android:layout_marginRight="45dp"
             android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View Annoucements"/>
+            android:text="Annoucement"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape3"
+            android:background="#87557c"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="70dp"
@@ -91,7 +96,10 @@
         <Button
             android:id="@+id/rescheduleDemo"
             android:layout_marginTop="15dp"
-            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:fontFamily="sans-serif-condensed"
             android:layout_marginRight="45dp"
             android:background="@android:color/transparent"
             android:layout_width="match_parent"
@@ -101,7 +109,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape3"
+            android:background="#763d69"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="70dp"
@@ -113,7 +122,10 @@
         <Button
             android:id="@+id/registerTeams"
             android:layout_marginTop="15dp"
-            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
             android:layout_marginRight="45dp"
             android:background="@android:color/transparent"
             android:layout_width="match_parent"
@@ -123,7 +135,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape3"
+            android:background="#652556"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="70dp"
@@ -135,18 +148,21 @@
         <Button
             android:id="@+id/postQueries"
             android:layout_marginTop="15dp"
-            android:textSize="20dp"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
             android:layout_marginRight="45dp"
             android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:text="Post Queries"/>
+            android:fontFamily="sans-serif-condensed"
+            android:text="Queries"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/shape3"
+            android:background="#540d44"
+            android:layout_margin="5dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="70dp"
@@ -159,13 +175,15 @@
 
             android:id="@+id/demoSlots"
             android:layout_marginTop="15dp"
-            android:textSize="20dp"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
             android:layout_marginRight="45dp"
             android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:text="Demo Slot"/>
+            android:text="Register Demo Slot"/>
             </LinearLayout>
 
     </LinearLayout>

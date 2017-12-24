@@ -4,54 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:id="@+id/activity_main"
-    android:background="@android:color/white"
+    android:background="@drawable/bg_gradient"
     android:gravity="top|center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:paddingTop="30dp"
-        android:layout_height="200dp"
-        android:src="@drawable/student"/>
+        android:layout_height="150dp"
+        android:src="@drawable/studentt"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:paddingTop="30dp"
         android:orientation="vertical">
-        <EditText
-            android:gravity="center"
-            android:id="@+id/studentId"
-            android:background="@drawable/shape"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:padding="10dp"
+        <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape4"
             android:layout_height="wrap_content"
-            android:hint="Enter Username"/>
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/username"/>
+            <EditText
+                android:id="@+id/studentId"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:maxLines="1"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"/></RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape4"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/pwd"/>
 
-        <EditText
-            android:gravity="center"
-            android:inputType="textPassword"
-            android:id="@+id/studentPwd"
-            android:background="@drawable/shape"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter Password"/>
+            <EditText
+                android:id="@+id/studentPwd"
+                android:inputType="textPassword"
+                android:gravity="center"
+                android:maxLines="1"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"/></RelativeLayout>
     </LinearLayout>
     <Button
-
         android:id="@+id/send"
-        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape3"
+        android:background="@drawable/shape5"
+        android:layout_margin="10dp"
         android:textStyle="bold"
+        android:textColor="#ffffff"
         android:textSize="18dp"
         android:text="LOGIN"/>
     <TextView
@@ -60,7 +91,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="bottom"
         android:textSize="15dp"
-        android:textColor="#540d44"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
         android:fontFamily="sans-serif-condensed"
         android:text="Sign in as TEACHER"
         android:gravity="center"/>
