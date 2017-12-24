@@ -27,6 +27,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:padding="10dp"
+            android:fontFamily="sans-serif-condensed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Username"/>
@@ -41,17 +42,31 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
             android:padding="10dp"
+            android:fontFamily="sans-serif-condensed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Password"/>
     </LinearLayout>
     <Button
         android:id="@+id/send"
+        android:fontFamily="sans-serif-condensed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/blue"
+        android:background="@drawable/shape3"
         android:textStyle="bold"
+        android:textColor="#540d44"
         android:textSize="18dp"
         android:text="LOGIN"/>
+
+    <TextView
+        android:id="@+id/signInasStudent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:textSize="15dp"
+        android:textColor="#540d44"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sign in as Student"
+        android:gravity="center"/>
 </LinearLayout>
 

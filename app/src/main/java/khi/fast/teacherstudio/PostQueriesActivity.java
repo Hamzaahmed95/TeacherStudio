@@ -244,7 +244,7 @@ public class PostQueriesActivity  extends AppCompatActivity {
         Close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name="Anousha ";
+                String name="Posted By Hamza ";
                 String Question=editQuery.getText().toString();
                 QueryClass queryClass=new QueryClass(name,Question,"TeacherName","","0");
                 mMessageDatabaseReference.push().setValue(queryClass);

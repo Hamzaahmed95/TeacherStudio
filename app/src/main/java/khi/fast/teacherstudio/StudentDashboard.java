@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * Created by Hamza Ahmed on 23-Dec-17.
@@ -16,11 +17,21 @@ public class StudentDashboard  extends AppCompatActivity {
     Button registerTeams;
     Button postQueries;
     Button DemoSlots;
+    ImageView closeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.student_dashboard);
+        closeButton = (ImageView) findViewById(R.id.logout);
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(StudentDashboard.this,StudentLoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
         viewAnnoucements=(Button)findViewById(R.id.viewAnnoucements);
         viewAnnoucements.setOnClickListener(new View.OnClickListener() {
             @Override

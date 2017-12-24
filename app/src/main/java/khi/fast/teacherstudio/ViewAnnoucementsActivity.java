@@ -99,7 +99,7 @@ public class ViewAnnoucementsActivity extends AppCompatActivity {
     protected void onCreate( final Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.post_annoucements);
+        setContentView(R.layout.view_annoucements);
 
         NAME=ANONYMOUS;
         notes = new ArrayList<String>();

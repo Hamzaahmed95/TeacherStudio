@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -17,7 +18,10 @@ public class StudentLoginActivity extends AppCompatActivity {
     EditText id;
     EditText pwd;
     Button send;
+
+    TextView signInasStudent;
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.student_login);
@@ -36,6 +40,16 @@ public class StudentLoginActivity extends AppCompatActivity {
                 }
             }
         });
+        signInasStudent=(TextView)findViewById(R.id.signInasTeacher);
+        signInasStudent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(StudentLoginActivity  .this,TeacherLoginActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+
 
 
     }

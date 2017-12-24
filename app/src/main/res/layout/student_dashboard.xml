@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -6,6 +13,35 @@
     android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:background="#540D44">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:text="Student Dashboard"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:id="@+id/logout"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp"
+            android:src="@drawable/logout"/>
+
+    </RelativeLayout>
     <ImageView
         android:layout_width="150dp"
         android:padding="20dp"
@@ -17,68 +53,121 @@
         android:gravity="center"
         android:layout_margin="10dp"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_height="70dp"
+                android:src="@drawable/anc"/>
         <Button
             android:gravity="center"
             android:id="@+id/viewAnnoucements"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
+            android:layout_marginTop="15dp"
             android:textSize="20dp"
+            android:layout_marginRight="45dp"
+            android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="View Annoucements"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_height="70dp"
+                android:src="@drawable/schedule"/>
         <Button
             android:id="@+id/rescheduleDemo"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
+            android:layout_marginTop="15dp"
             android:textSize="20dp"
+            android:layout_marginRight="45dp"
+            android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Reschedule Demo "/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_height="70dp"
+                android:src="@drawable/team"/>
         <Button
             android:id="@+id/registerTeams"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
+            android:layout_marginTop="15dp"
             android:textSize="20dp"
+            android:layout_marginRight="45dp"
+            android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Register Teams"/>
-        <Button
-            android:id="@+id/postQueries"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
-            android:textSize="20dp"
+            </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_height="70dp"
+                android:src="@drawable/queries"/>
+        <Button
+            android:id="@+id/postQueries"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginRight="45dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
             android:text="Post Queries"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_height="70dp"
+                android:src="@drawable/slot"/>
         <Button
 
             android:id="@+id/demoSlots"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
+            android:layout_marginTop="15dp"
             android:textSize="20dp"
+            android:layout_marginRight="45dp"
+            android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:text="Demo Slot"/>
+            </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</LinearLayout></ScrollView>

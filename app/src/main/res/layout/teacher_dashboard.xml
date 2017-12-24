@@ -1,84 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:gravity="center|top"
     android:background="@android:color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/teaching"/>
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:background="@android:color/white"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
-        <Button
-            android:id="@+id/postAnnoucements"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
-            android:textSize="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Post Annoucements"/>
-        <Button
-            android:id="@+id/uploadDemo"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
-            android:textSize="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Upload Demo Slots"/>
-        <Button
-            android:id="@+id/approveRequest"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
-            android:textSize="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Approve Request"/>
-        <Button
+        android:layout_height="match_parent">
 
-            android:id="@+id/answerQueries"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
-            android:textSize="20dp"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linearLayout"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:background="#540D44">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:text="Teacher Dashboard"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:id="@+id/logout"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp"
+            android:src="@drawable/logout"/>
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/teaching"/>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Answer Query"/>
-        <Button
-
-            android:id="@+id/viewStudentDetails"
             android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@color/blue"
-            android:padding="15dp"
-            android:textSize="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="View Student Details"/>
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/anc"/>
+                <Button
+                    android:gravity="center"
+                    android:id="@+id/postAnnoucements"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:layout_marginRight="45dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Post Annoucements"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/schedule"/>
+                <Button
+                    android:id="@+id/uploadDemo"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:layout_marginRight="45dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Demo Slots"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/team"/>
+                <Button
+                    android:id="@+id/approveRequest"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:layout_marginRight="45dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Approve Request"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/queries"/>
+                <Button
+                    android:id="@+id/answerQueries"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:layout_marginRight="45dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
 
-    </LinearLayout>
+                    android:text="Answer Query"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape3"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/slot"/>
+                <Button
 
-</LinearLayout>
+                    android:id="@+id/viewStudentDetails"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:layout_marginRight="45dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Student Details"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout></ScrollView>

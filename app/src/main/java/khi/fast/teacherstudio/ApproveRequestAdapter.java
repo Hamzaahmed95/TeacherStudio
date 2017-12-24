@@ -88,7 +88,9 @@ public class ApproveRequestAdapter extends ArrayAdapter<RegisterTeamClass>{
                                 Cancel.setVisibility(View.GONE);
                             }
                             else{
-
+                                Cancel.setVisibility(View.VISIBLE);
+                                Approve.setEnabled(true);
+                                Approve.setText("Confirm");
                             }
                         }
 

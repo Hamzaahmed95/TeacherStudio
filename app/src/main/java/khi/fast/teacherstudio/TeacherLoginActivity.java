@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -17,6 +18,7 @@ public class TeacherLoginActivity extends AppCompatActivity {
     EditText id;
     EditText pwd;
     Button send;
+    TextView signInasStudent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,15 @@ public class TeacherLoginActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(TeacherLoginActivity.this,"Enter Correct ID or Password!",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        signInasStudent=(TextView)findViewById(R.id.signInasStudent);
+        signInasStudent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(TeacherLoginActivity.this,StudentLoginActivity.class);
+                startActivity(i);
+                finish();
             }
         });
 

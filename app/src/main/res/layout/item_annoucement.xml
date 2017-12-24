@@ -18,6 +18,8 @@
 
     <TextView
         android:id="@+id/TeacherName"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Teacher: Anousha Ali"/>
@@ -26,15 +28,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="40dp"
-        android:paddingBottom="40dp"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:textStyle="bold"
+        android:textSize="25dp"
         android:textColor="@android:color/black"
         android:text="I'm First Annoucements!"
         android:id="@+id/Annoucements"/>
 
     <TextView
         android:id="@+id/CourseName"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Course: Mathematics"/>

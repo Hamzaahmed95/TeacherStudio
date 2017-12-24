@@ -39,7 +39,7 @@
             android:background="@drawable/shape"
             android:layout_margin="10dp"
             android:textColor="@android:color/white"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:backgroundTint="#540D44"
             android:text="Approve"/>
 
         <Button

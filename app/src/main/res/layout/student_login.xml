@@ -50,9 +50,19 @@
         android:id="@+id/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/blue"
+        android:background="@drawable/shape3"
         android:textStyle="bold"
         android:textSize="18dp"
         android:text="LOGIN"/>
+    <TextView
+        android:id="@+id/signInasTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:textSize="15dp"
+        android:textColor="#540d44"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sign in as TEACHER"
+        android:gravity="center"/>
 </LinearLayout>
 

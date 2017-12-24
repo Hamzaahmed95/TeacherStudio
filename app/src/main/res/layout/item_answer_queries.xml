@@ -68,8 +68,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/AskQuestion"
             android:fontFamily="sans-serif-condensed"
-            android:textColor="#23355b"
-            android:background="@drawable/shape2"
+            android:textColor="#ffffff"
+            android:background="#540D44"
             android:text="Answer it"/>
     </LinearLayout>
 

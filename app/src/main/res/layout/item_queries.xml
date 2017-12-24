@@ -38,7 +38,7 @@
         android:textStyle="bold"
         android:fontFamily="sans-serif-condensed"
         android:textColor="@android:color/white"
-        android:background="#23355b"
+        android:background="#540D44"
         android:text="Ask"/>
 
 </LinearLayout>

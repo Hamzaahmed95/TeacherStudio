@@ -50,8 +50,8 @@ public class QueriesAdapter extends ArrayAdapter<QueryClass> {
         QueryClass message = getItem(position);
         Questions.setText(message.getQuestion());
         Answer.setText(message.getAnswer());
-        StudentName.setText("Anousha");
-        TeacherName.setText("Hamza");
+        StudentName.setText("Posted By: Anousha");
+        TeacherName.setText("Answered By: Sir Hamza");
         if(message.getStatus().equals("0")){
             linearLayout.setVisibility(View.GONE);
         }
